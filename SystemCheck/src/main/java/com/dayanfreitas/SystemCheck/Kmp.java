@@ -1,3 +1,5 @@
+package com.dayanfreitas.SystemCheck;
+
 class Kmp {
     private String busca;
     private String texto = "Oi eu sou um texto de teste de busca";
