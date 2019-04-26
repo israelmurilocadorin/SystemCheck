@@ -3,8 +3,6 @@ package com.dayanfreitas.View;
 import com.dayanfreitas.SystemCheck.*;
 import java.awt.EventQueue;
 import javax.swing.JFrame;
-import javax.swing.JTextPane;
-import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.JLabel;
 import javax.swing.JButton;

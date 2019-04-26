@@ -7,7 +7,7 @@ public class Kmp {
     private int len = 0;
     private int i   = 1;
     private int m;
-    private String achou;
+    private String achou = "Achou ";
     public Kmp(String busca) {
         this.busca = busca;
     }
@@ -30,7 +30,7 @@ public class Kmp {
                 i++;
             } if (j == m) {
                 System.out.println("Palavra/letra encontrada na posição: " + (i - j));
-                this.achou = "Achou";
+                this.achou = this.achou + "na posição" + (i - j) + " ";
                 j = lps[j - 1];
             }
             else if (i < n && busca.charAt(j) != texto.charAt(i)) {
