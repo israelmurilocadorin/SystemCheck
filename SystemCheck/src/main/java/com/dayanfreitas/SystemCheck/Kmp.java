@@ -6,9 +6,9 @@ import java.io.FileReader;
 import java.io.IOException;
 
 class Kmp {
-	File funk = new File("C:\\Users\\cliente\\Desktop\\SystemCheck\\SystemCheck\\src\\main\\java\\com\\dayanfreitas\\SystemCheck\\Funk.txt");
 	
-	private String busca;
+    File funk = new File("C:\\Users\\cliente\\Desktop\\SystemCheck\\SystemCheck\\src\\main\\java\\com\\dayanfreitas\\SystemCheck\\Funk.txt");
+    private String busca;
     private int lps[];
     private int len = 0;
     private int i = 1;
@@ -45,7 +45,7 @@ class Kmp {
                 j++;
                 i++;
             } if (j == m) {
-                System.out.println("Palavra/letra encontrada na posição: " + (i - j));
+                System.out.println("Palavra/letra encontrada na posiÃ§Ã£o: " + (i - j));
                 j = lps[j - 1];
             }
             else if (i < n && busca.charAt(j) != ((CharSequence) funk).charAt(i)) {
