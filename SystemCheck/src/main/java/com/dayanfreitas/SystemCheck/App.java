@@ -1,21 +1,19 @@
 package com.dayanfreitas.SystemCheck;
+import java.util.Scanner;
 
 /**
  * Hello world!
  *
  */
-public class App 
-{
-    public static void main( String[] args )
-    {
+public class App {
+    public static void main( String[] args ) {
+    	Scanner in = new Scanner(System.in);
     	
-        System.out.println("Passando só a palavra:");
-    	Kmp busca = new Kmp("Oi");
-        busca.retornar();
-        System.out.println(" ");
-        System.out.println("Passando palavra de busca e Texto:");
-        Kmp b  = new Kmp("seu","cala a boca seu gay");
-        b.retornar();
+        System.out.println("Digite a palavra: ");
+        String busca = in.nextLine();
+        
+        Kmp procurar = new Kmp(busca);
+        procurar.ler();
 
     }
 }
