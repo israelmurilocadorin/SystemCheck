@@ -1,13 +1,13 @@
 package com.dayanfreitas.SystemCheck;
 
-class Kmp {
+public class Kmp {
     private String busca;
     private String texto = "Oi eu sou um texto de teste de busca";
     private int lps[];
     private int len = 0;
     private int i   = 1;
     private int m;
-
+    private String achou;
     public Kmp(String busca) {
         this.busca = busca;
     }
@@ -30,6 +30,7 @@ class Kmp {
                 i++;
             } if (j == m) {
                 System.out.println("Palavra/letra encontrada na posição: " + (i - j));
+                this.achou = "Achou";
                 j = lps[j - 1];
             }
             else if (i < n && busca.charAt(j) != texto.charAt(i)) {
@@ -57,7 +58,9 @@ class Kmp {
             }
         }
     }
-
+    public String getAchou() {
+    	return this.achou;
+    }
     public void retornar() {
         kmpSearch();
         computeLpsArray();
